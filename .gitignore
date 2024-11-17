@@ -3,7 +3,6 @@ frontend/node_modules/
 backend/node_modules/
 .env
 
-# https://home.openweathermap.org/-> password:reactweather
-# API KEY: 7a2e6887ac7f0c3ab652d21c4d639da5
+
 
  
