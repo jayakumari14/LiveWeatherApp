@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./App.css";
 
 function App() {
   const [city, setCity] = useState("");
@@ -17,8 +18,12 @@ function App() {
   };
 
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>Weather App</h1>
+    <div
+      style={{ textAlign: "center", marginTop: "50px" }}
+      className="container"
+    >
+      <h1 style={{ marginBottom: "20px" }}>Weather App</h1>
+
       <input
         type="text"
         placeholder="Enter city"
