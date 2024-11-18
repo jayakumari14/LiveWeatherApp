@@ -9,7 +9,7 @@ function App() {
   const fetchWeather = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/weather?city=${city}`
+        `https://liveweatherapp-3.onrender.com/weather?city=${city}`
       );
       setWeather(response.data);
     } catch (error) {
