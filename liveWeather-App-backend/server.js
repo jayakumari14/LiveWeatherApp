@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5000;
 // app.use(cors());
 app.use(
   cors({
-    origin: "https://your-frontend-url.netlify.app",
+    origin: "https://weather-live-app-live.netlify.app/",
   })
 );
 
