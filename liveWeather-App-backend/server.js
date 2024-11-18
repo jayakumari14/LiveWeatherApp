@@ -10,6 +10,7 @@ const PORT = process.env.PORT || 5000;
 app.use(
   cors({
     origin: process.env.FRONTEND_URL,
+    methods: ["GET"],
   })
 );
 
@@ -25,6 +26,7 @@ app.get("/weather", async (req, res) => {
   //   const city = "chennai";
   console.log("City:", city); // Log the city value
   console.log("API Key:", API_KEY); // Log the API key
+  // const URL = `https://liveweatherapp-3.onrender.com/weather?q=${city}&appid=${API_KEY}&units=metric`;
   const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
 
   try {
