@@ -34,7 +34,7 @@ function App() {
 
       {weather && (
         <div style={{ marginTop: "20px" }}>
-          <h2>{weather.name}</h2>
+          <h2>{weather.name}</h2> <br />
           <p>Temperature: {weather.main.temp}°C</p>
           <p>Weather: {weather.weather[0].description}</p>
         </div>
